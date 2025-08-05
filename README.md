@@ -28,3 +28,4 @@ NPX- executa um script
 - O que é o Express
 - Protocolo http
 - Métodos http (GET, POST, PUT, PATCH, DELETE)
+- como mudar o formato de importção/exportação de require para import (Adicionar no package.json type:"module")
