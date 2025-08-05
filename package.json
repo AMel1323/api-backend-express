@@ -14,5 +14,8 @@
     "mysql"
   ],
   "author": "Melissa Alves Santos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
