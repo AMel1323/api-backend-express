@@ -33,6 +33,7 @@ NPX- executa um script
 - como mudar o formato de importção/exportação de require para import (Adicionar no package.json type:"module")
 
 --watch(parametro para rodar um js em modo dev, que permite rodar novamente o script quando algum arquivo é alterado)
+- Router (Para que separar as rotas?)
 
 sintaxe básica de uma rota de API 
  
@@ -45,3 +46,13 @@ sintaxe básica de uma rota de API
   - rota ou endereço: /produto
   - tipo de resposta: json
  
+app.post('/profile')
+app.get('/profile')
+app.get('/profile/:id')
+app.put('/profile/:id')
+app.delete('/profile/:id/:name')
+
+/profile
+
+para que serve o Router ?
+organização, manutenção e facilitar a manutenção dos códigos

@@ -1,53 +1,18 @@
 import express from 'express'
+import profileRouter from './routers/profileRouter.js'
+import productRouter from './routers/productRouter.js'
+import supplierRouter from './routers/supplierRouter.js'
+import carRouter from './routers/carRouter.js'
 
 const app = express()
 const port = 3333
 
-app.use(express.json())
+app.use(express.json()) // converter o JSON que chegou na requesição em um objeto JavaScript e vai salvar em req.body
 
-  app.post('/profile', (req, res) => {
-  const dados = req.body
-  console.log(dados)
-  res.json({
-    menssage: 'Usuário Criados com sucesso!',
-    profile: dados
-  })
-  })
-
-  app.put('/user', (req, res) => {
-   const dados = req.body 
-    console.log(dados)
-   res.json({
-    menssage: 'usuario editado com sucesso!',
-    profile: dados
-  })
-  })
-  
-  app.get('/profile', (req, res) => {
-  console.log('foi feito um GET no  /GET')
-  res.json({
-    profile: 'Dados listados com sucesso!'})
-  })
- 
-  app.post('/profile', (req, res) => {
-  console.log('foi feito um POST no  /POST')
-  res.json({
-    profile: 'Dados Criados com sucesso!'})
-  })
-
-  app.put('/profile', (req, res) => {
-  console.log('foi feito um PUT no  /PUT')
-  res.json({
-    profile: 'Dados Atualizados com sucesso!'})
-  })
-
-  app.delete('/profile', (req, res) => {
-  console.log('foi feito um DELETE no  /DELETE')
-  res.json({
-    profile: 'Dados DELETADO com sucesso!'})
-  })
-
-
+ app.use('/profile', profileRouter)
+ app.use('/product', productRouter)
+ app.use('supplier', profileRouter) 
+app.use('/car', carRouter)
 
 app.listen(port, () => {
   console.log(`API Rodando em http://localhost:${port}`)
