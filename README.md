@@ -24,18 +24,32 @@ NPX- executa um script
 # Tópicos Importantes
 
 - O que é framework
--O que é JavaScript
+- O que é JavaScript
 - O que é NPM (Node Package Manager)
 - O que é node.js
 - O que é o Express
 - Protocolo http
 - Métodos http (GET, POST, PUT, PATCH, DELETE)
-- como mudar o formato de importção/exportação de require para import (Adicionar no package.json type:"module")
+- Como mudar o formato de importção/exportação de require para import (Adicionar no package.json type:"module")
 
 --watch(parametro para rodar um js em modo dev, que permite rodar novamente o script quando algum arquivo é alterado)
-- Router (Para que separar as rotas?)
 
-sintaxe básica de uma rota de API 
+- Router (Para que separar as rotas?)
+- Parâmetros 
+- O que significa M V C ? (Mdel View Controller)
+ Ele separa os códigos em 3 camada
+ - Mdel: Acesso ao banco de dados, definir as regras de Negócio 
+ - View: Uma camada de Vizualização a interface do user, função do front-end
+
+ - Controller: entrada de dados, processamento dos dados, saída de dados
+
+- O que é um padrão de projeto? (é uma forma de fazer a codificação maneira organizada que é amplamente conhecido mudialmente)
+
+
+
+
+
+Sintaxe básica de uma rota de API 
  
  app.post('/produtos', (req, res) => {
   res.json({
@@ -54,5 +68,5 @@ app.delete('/profile/:id/:name')
 
 /profile
 
-para que serve o Router ?
+- Para que serve o Router ?
 organização, manutenção e facilitar a manutenção dos códigos
