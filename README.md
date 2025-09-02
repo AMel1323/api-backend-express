@@ -38,9 +38,8 @@ NPX- executa um script
 - Parâmetros 
 - O que significa M V C ? (Mdel View Controller)
  Ele separa os códigos em 3 camada
- - Mdel: Acesso ao banco de dados, definir as regras de Negócio 
+ - Model: Acesso ao banco de dados, definir as regras de Negócio 
  - View: Uma camada de Vizualização a interface do user, função do front-end
-
  - Controller: entrada de dados, processamento dos dados, saída de dados
 
 - O que é um padrão de projeto? (é uma forma de fazer a codificação maneira organizada que é amplamente conhecido mudialmente)
@@ -70,3 +69,50 @@ app.delete('/profile/:id/:name')
 
 - Para que serve o Router ?
 organização, manutenção e facilitar a manutenção dos códigos
+
+-dia 30 prova backend e dia 23 revisão
+
+prisma é um ORM...
+uma ferramenta para Node.js e TypeScript que facilita a interação com bancos de dados.
+
+- o que é uma ORM?
+(
+  O: objeto  
+  R: relational
+  M: model
+)
+ (serve para simplificar a interação entre aplicação e banco de dados)
+
+ - Dependencias dev  fazem partes e são do desenvolvimeto do projeto(ajuda)/ ja as dependencias fazem parte do projeto interno
+
+
+## Comandos do Prisma 
+
+- Instalação do prisma
+(
+  npm i prisma - D --passo 1
+  npm prisma i @prisma/client --passo 2
+)
+
+- Inicializar o prisma 
+(
+npx prisma init
+)
+
+- Gerar o model do prisma a partir de um BD existente
+
+(
+  npx prisma db pull
+)
+
+- Gerar o BD  a partir de um model do prisma 
+
+(
+  npx prisma db push
+)
+
+- Gerar os arquivos necessários para usar o prisma client no código
+
+(
+   npx prisma generate 
+)

@@ -1,5 +1,13 @@
-export const listProfileController = (req, res) => {
+import {list} from '../../models/profileModel.js'
+
+export const listProfileController =  async (req, res) => {
+    
+    const result = await list()
+    
     res.json({
-        profile: 'Dados listados com sucesso!'
+        message: 'Dados listados com sucesso!',
+        profile: result
     })
+
 }
+
