@@ -4,10 +4,12 @@ import productRouter from './routers/productRouter.js'
 import supplierRouter from './routers/supplierRouter.js'
 import carRouter from './routers/carRouter.js'
 import customerRouter from './routers/customerRouter.js'
+import cors from 'cors'
 
 const app = express()
 const port = 3333
 
+app.use(cors()) // liberar o acesso a API para qualquer aplicação (front-end)
 app.use(express.json()) // converter o JSON que chegou na requesição em um objeto JavaScript e vai salvar em req.body
 
 app.use('/profile', profileRouter)
