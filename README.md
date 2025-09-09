@@ -90,25 +90,25 @@ uma ferramenta para Node.js e TypeScript que facilita a interação com bancos d
 
 - Instalação do prisma
 (
-  npm i prisma - D --passo 1
+  npm i prisma -D --passo 1
   npm prisma i @prisma/client --passo 2
 )
 
 - Inicializar o prisma 
 (
-npx prisma init
+    npx prisma init
 )
 
 - Gerar o model do prisma a partir de um BD existente
 
 (
-  npx prisma db pull
+    npx prisma db pull
 )
 
 - Gerar o BD  a partir de um model do prisma 
 
 (
-  npx prisma db push
+    npx prisma db push
 )
 
 - Gerar os arquivos necessários para usar o prisma client no código

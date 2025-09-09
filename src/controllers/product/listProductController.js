@@ -1,4 +1,12 @@
-export const listProductController = (req, res) => {
-  console.log('Foi feito um GET no /GET')
-  res.json({ message: `Produto do ${id} consultado com sucesso` })
+import {list} from "../../models/productModel.js"
+
+export const listProductController = async (req, res) => {
+    const id = req.params.id
+
+    const result = await list(+id)
+
+
+  res.json({ message: 'Produtos listado com sucesso' ,
+  product: result
+  })
 }
