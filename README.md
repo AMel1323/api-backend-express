@@ -116,3 +116,9 @@ uma ferramenta para Node.js e TypeScript que facilita a interação com bancos d
 (
    npx prisma generate 
 )
+
+## Padrão de projeto Middleware
+
+- Middleware é um padrão de projeto
+    
+     objeto agrupa varias funcoes (grupo de valores)

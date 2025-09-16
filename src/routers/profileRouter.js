@@ -5,10 +5,12 @@ import { getByIdProfileController } from '../controllers/profile/getByIdProfileC
 import { editProfileController } from '../controllers/profile/editProfileController.js'
 import { deleteProfileController } from '../controllers/profile/deleteProfileController.js'
 
+
 const router = express.Router()
 
+
 router.post('/', createProfileController)
-router.get('/', listProfileController)
+router.get('/',  listProfileController)
 router.get('/:id', getByIdProfileController)
 router.put('/:id', editProfileController)
 router.delete('/:id', deleteProfileController)
