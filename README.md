@@ -186,4 +186,17 @@ uma ferramenta para Node.js e TypeScript que facilita a interação com bancos d
   M: model
 )
  (serve para simplificar a interação entre aplicação e banco de dados)
+MVC
 
+model view controller 
+
+Model: acessa o banco de dados, add, deleta com operações do banco, definindo as regras do projeto como validação de dados
+
+View: uma camada de vizualização a interface do user, função do frontEnd
+
+Controller: controla e entrada de dados que estão chegando do user, processamento rever se esta convertido ver a necessidade desses dados que chegam se elees serem deletados cadastrados, e saída de dados.
+
+PADRÂO DE PROJETO 
+uma forma de realizar a codificação de maneira conhecida no meio dos desenvolvedores, seu benefício é amplo conhecimento e eficiência no desenvolvimento
+
+- dependencias dev fazem partes e são ferramentas do desenvolvimento do projeto 
