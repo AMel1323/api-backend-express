@@ -1,10 +1,10 @@
-import { remove } from "../../models/productModel.js"
+import { remove } from '../../models/productModel.js'
 
-export const deleteProductController = async(req, res) => {
+export const deleteProductController = async (req, res) => {
   const id = req.params.id
   const result = await remove(+id)
-
-  res.json({ message: `Produtos com ID ${id} deletado com sucesso`,
+  res.json({
+    message: `Produto com ID ${id} deletado com sucesso!`,
     product: result
-})
+  })
 }

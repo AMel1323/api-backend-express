@@ -1,9 +1,9 @@
 import express from 'express'
-import { createSupplierController } from '../controllers/suplier/createSupplierController.js'
-import { listSupplierController } from '../controllers/suplier/listSupplierController.js'
-import { getByIdSupplierController } from '../controllers/suplier/getByIdSupplierController.js'
-import { editSupplierController } from '../controllers/suplier/editSupplierController.js'
-import { deleteSupplierController } from '../controllers/suplier/deleteSupplierController.js'
+import { createSupplierController } from '../controllers/supplier/createSupplierController.js'
+import { listSupplierController } from '../controllers/supplier/listSupplierController.js'
+import { getByIdSupplierController } from '../controllers/supplier/getByIdSupplierController.js'
+import { editSupplierController } from '../controllers/supplier/editSupplierController.js'
+import { deleteSupplierController } from '../controllers/supplier/deleteSupplierController.js'
 
 const router = express.Router()
 

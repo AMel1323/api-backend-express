@@ -4,10 +4,8 @@ export const editProductController = async (req, res) => {
   const id = req.params.id
   const product = req.body
   const result = await update(+id, product)
-
   res.json({
-    menssage: `Produtos ${id} Atulizados com suceso`,
+    message: 'Produto editado com sucesso!',
     product: result
-
   })
 }
