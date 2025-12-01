@@ -200,3 +200,31 @@ PADRÂO DE PROJETO
 uma forma de realizar a codificação de maneira conhecida no meio dos desenvolvedores, seu benefício é amplo conhecimento e eficiência no desenvolvimento
 
 - dependencias dev fazem partes e são ferramentas do desenvolvimento do projeto 
+
+# AVALIAÇÃO 09/12
+
+- AUTENTICAÇÃO E LOGIN DE USUÁRIOS
+   - COMO SALVAR A SENHA DO USUARIO NO BD DE FORMA SEGURA? 
+     salvar com o hash (Bcrypt)
+   - AUTENTICAÇÃO(LOGIN), O QUE VERIFICAR E FAZER NO LOGIN?
+     verificar se o email existe no banco de dados
+     comparar a senha digitada do login com a senha salva no banco de dados (usando o bcrypt compare)
+   - JWT (json web token)
+   - QUAIS AS VANTAGENS DO JWT?
+      Playload já disponibiliza no token (backend não precisa consultar o BD)
+      Assinado pelo Segredo do Backend
+      Amplamente conhecido e com biblioteca disponível
+    - COMO É ENVIADO O TOKEN PARA O BACKEND
+       por meio do Header Authorization da requisição HTTP
+
+-  VALIDAÇÃO DE DADOS (REGRAS DE NEGÓCIO) COM ZOD 
+    - PARA QUE SERVE O ZOD?
+      para validar os dados que estão chegando na requisição, regras de validação com os dados
+    - PARA QUE SERVE O PARTIAL DO ZOD?
+      para tornar todos os campos opcionais, para o zod não precisar validar todos os campos
+    
+- ERROHANDLER (MIDDLEWARE PARA TRATAMENTO DE ERROS DA API)
+    - PARA QUE SERVE O ERROHANDLER?
+      para capturar os erros que acontecem na aplicação e enviar uma resposta adequada para o cliente, facilita a manutenção do código, se não tratarmos os erros a aplicação pode quebrar e não funcionar corretamente
+     capturar erros do backend, evitar que o servidor pare(quebre) com erros de exceções, facilitar a manutenção de erros, mostrar erros no console para o desenvolvedor, responder mensagens de erro amigáveis para o usuário (Response)
+    
